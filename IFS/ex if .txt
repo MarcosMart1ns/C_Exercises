@@ -1,0 +1,160 @@
+1 - 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int num;
+
+    printf("Escreva um numero ae:\n");
+    scanf("%d",&num);
+    if(num>10){
+        printf("Esse numero e maior que 10\n");
+    }else{
+        printf("Esse numero nao e maior que 10\n");
+    }
+    system("pause");
+    return 0;
+}
+
+_______________________________________________________________
+
+2- 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float vxerox;
+    int copias;
+
+    printf("Quantas copias serao impressas?\n");
+    scanf("%d",&copias);
+
+    if (copias>100){
+        vxerox = copias*0.20;
+    }else{
+        vxerox = copias*0.25;
+    }
+    
+    printf("O valor total de %d copias e de R$ %2.f Reais \n",copias,vxerox);
+
+    system("pause");
+    return 0;
+}
+
+____________________________________________________
+
+3- 
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+    int num1,num2;
+
+    printf("Qual o maior numero?Digite abaixo dois numeros\n");
+    printf("Digite o primeiro numero:\n");
+    scanf("%d",&num1);
+    printf("Digite o segundo numero:\n");
+    scanf("%d",&num2);
+
+    if(num1>num2){
+        printf("O numero %d e o maior numero\n", num1);
+    }else{
+        printf("O numero %d e o maior numero\n", num2);
+    }
+system("pause");
+return 0;
+}
+
+________________________
+
+4- 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(){
+    char password[20];
+    int retorno;
+    printf("Insira a senha de ate 20 caracteres e sem espacos:\n");
+    scanf("%s",&password);
+
+    retorno = strcmp(password,"marcos123");
+
+    printf("%d\n",retorno); 
+
+    if(retorno == 0){
+        printf("AEEEE A senha esta correta!\n");
+    }else{
+        printf("Acho que a senha esta incorreta )= \n");
+    }
+
+    system("pause");
+    return 0;
+}
+
+_________________________________________________
+
+5 - 
+
+#include <stdio.h>
+
+int main() {
+  int num;
+  float res;
+  printf("Insira um numero e irei descobrir se ele é par\n\n");
+  printf("Insira um numero\n");
+  scanf("%i",&num);
+
+  res = num %2;
+
+  if(res == 0){
+    printf("\nO numero e par");
+  }else{
+    printf("\nO numero e impar");
+  }
+  return 0;
+}
+
+_______________________________________________
+
+6 - 
+
+#include <stdio.h>
+
+int main() {
+  int num;
+
+  printf("Insira um numero para descobrirmos se e maior que 100 ou menor que 200\n");
+  scanf("%i",&num);
+
+  if(num>=100 && num<=200){
+    printf("O numero esta entre 100 e 200");
+  }else{
+    printf("O numero nao esta entre 100 e 200");
+  }
+  return 0;
+}
+________________________________________
+7 - 
+
+#include <stdio.h>
+
+int main() {
+  float sal,adjust;
+
+  printf("Insira seu salario e lhe mostraremos seu aumento\n");
+
+  printf("Salario: ");
+  scanf("%f",&sal);
+  adjust = sal*0.10;
+
+  printf("O seu salario com o reajuste de 10 por cento e %.2f Reais",sal+adjust);
+
+  return 0;
+}
+___________________________________
